@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Arial Pixel';
+    src: url('PIXEARG_.TTF') format('truetype');
+}
+
+* {
+    letter-spacing: 1.5px; 
+    font-size: xx-small;
+    font-family: Arial Pixel;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #BCEDF6; 
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80vh;
+    background: #DDFBD2; /* Fondo principal */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #320E3B; /* Fondo de la barra lateral */
+    color: #DDFBD2; /* Texto de la barra lateral */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    border-bottom: 2px solid #4C2A85;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+
+.nav-menu ul li a {
+    color: #BCEDF6; /* Color de los enlaces en la barra lateral */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu .logout {
+    margin-top: auto;
+    font-size: 16px;
+    background-color: #4C2A85; /* Fondo del botón de cerrar sesión */
+    color: #DDFBD2; /* Texto del botón de cerrar sesión */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    border: 2px solid #4C2A85;
+    background-color: #DDFBD2; /* Fondo del contenido principal */
+}
+
+h2, h3,h4 {
+    border-bottom: 2px solid #4C2A85;
+    background-color: #EFCFEF;
+    background-image: url(https://external-media.spacehey.net/media/saN0QMV1dG1v__wOkV27CqhlktTWI3oePJWvLgnWf86w=/https://chairfiles.vercel.app/navbuttons.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85, 4px 4px #4c2a8548;
+    color: #320E3B; /* Color del texto de los encabezados */
+}
+
+
+.task-list li {
+    background-color: #6B7FD7; /* Fondo de las listas de grupos y tareas */
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85, 4px 4px #4c2a8548;
+}
+
+.task-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-list label {
+    font-size: 18px;
+}
+
+/* Estilo para la sección de "Todos mis grupos" */
+.all-groups li {
+    background-color: #6B7FD7; /* Fondo de los grupos */
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85, 4px 4px #4c2a8548;
+}

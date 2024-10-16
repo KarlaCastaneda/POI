@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo detalles</title>
+    <link rel="stylesheet" href="gdetalles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h4>Bienvenido</h4>
+            <div class="profile">
+                <img src="icon.jpg" alt="Foto de Perfil" class="profile-img">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="ayuda.html">Inicio</a></li>
+                    <li><a href="chats.php">Mensajes</a></li>
+                    <li><a href="#grupos">Grupos</a></li>
+                    <li><a href="#tareas">Tareas</a></li>
+                    <li><a href="#cerrar-sesion" class="logout">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="chat-header">
+                <h2>Grupo de Redes computacionales</h2>
+            </div>
+            <div class="chat-window">
+                <div class="chat-messages">
+                    <!-- Mensaje recibido con nombre, fecha y hora -->
+                    <div class="message received">
+                        <span class="message-info">
+                            <span class="sender-name">Juan Pérez</span> 
+                            <span class="message-time">10:30 AM - 07/10/2024</span>
+                        </span>
+                        <p>Hola, pudieron hacer la tarea de ayer?</p>
+                    </div>
+
+                    <!-- Mensaje enviado con nombre, fecha y hora -->
+                    <div class="message sent">
+                        <span class="message-info">
+                            <span class="sender-name">Tú</span> 
+                            <span class="message-time">10:32 AM - 07/10/2024</span>
+                        </span>
+                        <p>Sí, la terminé anoche.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mover el chat-input fuera de chat-messages -->
+            <div class="chat-input">
+                <input type="text" placeholder="Escribe un mensaje..." />
+                <button class="send-btn">Enviar</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

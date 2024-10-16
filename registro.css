@@ -1,0 +1,110 @@
+* {
+    letter-spacing: 1.5px; 
+    font-size: xx-small;
+    font-family: 'Arial Pixel'; /* Cambié para usar la fuente personalizada */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #320e3b; /* Fondo principal del cuerpo */
+    color: #dcdcdc;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 300px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+    background-color: #4c2a85; /* Fondo del contenedor */
+    border: 2px solid #6b7fd7; /* Borde del contenedor */
+    margin: 0 auto;
+    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+}
+
+.login-box {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 20px;
+    background-image: url(https://external-media.spacehey.net/media/saN0QMV1dG1v__wOkV27CqhlktTWI3oePJWvLgnWf86w=/https://chairfiles.vercel.app/navbuttons.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-top: 30px; /* Ajustado el margen superior */
+    border-bottom: 2px solid #4D23CD;
+    border: 2px solid #6b7fd7; /* Borde del contenedor */
+    background-color: #EFCFEF;
+    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+    color: #4D23CD; /* Color del texto del título */
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="text"],
+.login-container input[type="date"],
+.login-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+    border: 2px solid #6b7fd7; /* Borde de los inputs */
+    background-color: #552761; /* Fondo de los inputs */
+    color: #ddfbd2; /* Color del texto en los inputs */
+    box-sizing: border-box;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #bcedf6; /* Color de los labels */
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 1px solid #bcedf6; /* Borde cuando el input está en foco */
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ddfbd2; /* Fondo del botón */
+    border: 2px solid #f0d1f1;
+    box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+    color: #4d23cf;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #6b7fd7; /* Fondo del botón al pasar el mouse */
+}
+
+.register-text {
+    margin-top: 15px;
+    color: #bcedf6; /* Color del texto de registro */
+}
+
+.register-text a {
+    color: #ddfbd2; /* Color del enlace de registro */
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}

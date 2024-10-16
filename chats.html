@@ -1,0 +1,107 @@
+<?php
+// Asegúrate de iniciar la sesión para poder acceder a $_SESSION
+session_start();
+
+// Almacena el valor del ID de usuario en una variable de PHP
+$idUsuario = $_SESSION['id_usuario']; // Asegúrate de que esta sesión esté bien definida
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat 1 a 1</title>
+    <link rel="stylesheet" href="chats.css"> <!-- Asegúrate de enlazar tu CSS -->
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral de navegación -->
+        <aside class="sidebar-left">
+            <h4>Mensajes</h4>
+            <div class="profile">
+                <img src="icon.jpg" alt="Foto de Perfil" class="profile-img">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="ayuda.html">Inicio</a></li>
+                    <li><a href="chats.php">Mensajes</a></li>
+                    <li><a href="#grupos">Grupos</a></li>
+                    <li><a href="#tareas">Tareas</a></li>
+                    <li><a href="#cerrar-sesion" class="logout">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <section id="chat">
+                <div class="recent-chats">
+                    <h3>Chats Recientes</h3>
+                    <ul>
+                        <li>
+                            <img src="icon1.jpg" alt="Usuario 1" class="chat-profile-img">
+                            <a href="#chat1">Chat con Usuario 1</a>
+                        </li>
+                        <li>
+                            <img src="icon2.jpg" alt="Usuario 2" class="chat-profile-img">
+                            <a href="#chat2">Chat con Usuario 2</a>
+                        </li>
+                        <li>
+                            <img src="icon3.jpg" alt="Usuario 3" class="chat-profile-img">
+                            <a href="#chat3">Chat con Usuario 3</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chat-header">
+                    <h2>Chat con [Nombre del Usuario]</h2>
+                    <button class="video-call-btn">Videollamada</button>
+                </div>
+                <div class="chat-window">
+                    <div class="chat-messages">
+                        <div class="message received">Hola, ¿cómo estás?</div>
+                        <div class="message sent">¡Hola! Estoy bien, gracias.</div>
+                        <div class="message received">¿Qué tal tu día?</div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Escribe un mensaje..." />
+                    <button class="send-btn">Enviar</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar derecha con lista de usuarios -->
+        <aside class="sidebar-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar usuario...">
+            </div>
+            <ul class="user-list">
+                <li>
+                    <img src="icon.hh" alt="Usuario 1" class="user-profile-img">
+                    <span class="user-status status-online"></span>
+                    <span class="user-name">Usuario 1</span>
+                </li>
+                <li>
+                    <img src="profile2.jpg" alt="Usuario 2" class="user-profile-img">
+                    <span class="user-status status-offline"></span>
+                    <span class="user-name">Usuario 2</span>
+                </li>
+                <li>
+                    <img src="profile3.jpg" alt="Usuario 3" class="user-profile-img">
+                    <span class="user-status status-online"></span>
+                    <span class="user-name">Usuario 3</span>
+                </li>
+                <li>
+                    <img src="profile4.jpg" alt="Usuario 4" class="user-profile-img">
+                    <span class="user-status status-offline"></span>
+                    <span class="user-name">Usuario 4</span>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+
+</body>
+</html>

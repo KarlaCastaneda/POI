@@ -1,0 +1,186 @@
+/* Estilo general (manteniendo el diseño existente) */
+@font-face {
+    font-family: 'Arial Pixel';
+    src: url('PIXEARG_.TTF') format('truetype');
+}
+
+* {
+    letter-spacing: 1.5px;
+    font-size: xx-small;
+    font-family: Arial Pixel;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #BCEDF6; /* Fondo claro */
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80vh;
+    background: #DDFBD2; /* Fondo principal */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #320E3B; /* Fondo de la barra lateral */
+    color: #DDFBD2; /* Texto de la barra lateral */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+
+.nav-menu ul li a {
+    color: #BCEDF6; /* Color de los enlaces en la barra lateral */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu .logout {
+    margin-top: auto;
+    font-size: 16px;
+    background-color: #4C2A85; /* Fondo del botón de cerrar sesión */
+    color: #DDFBD2; /* Texto del botón de cerrar sesión */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    padding: 20px;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    border: 2px solid #4C2A85;
+    background-color: #DDFBD2; /* Fondo del contenido principal */
+}
+
+h2, h3, h4 {
+    border-bottom: 2px solid #4C2A85;
+    background-color: #EFCFEF;
+    background-image: url(https://external-media.spacehey.net/media/saN0QMV1dG1v__wOkV27CqhlktTWI3oePJWvLgnWf86w=/https://chairfiles.vercel.app/navbuttons.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85, 4px 4px #4c2a8548;
+    color: #320E3B; /* Color del texto de los encabezados */
+}
+
+/* Estilos del chat */
+.chat-header {
+    padding: 15px;
+    background-color: #4C2A85;
+    color: #DDFBD2;
+    text-align: center;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    margin-bottom: 20px;
+}
+
+.chat-window {
+    flex: 1;
+    background-color: #BCEDF6;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo para los detalles de los mensajes (nombre y hora) */
+.message-info {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sender-name {
+    font-weight: bold;
+}
+
+.message-time {
+    font-style: italic;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 60%;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    font-size: 14px;
+}
+
+.message.received {
+    background-color: #EFCFEF;
+    align-self: flex-start;
+}
+
+.message.sent {
+    background-color: #6B7FD7;
+    color: #fff;
+    align-self: flex-end;
+}
+
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #4C2A85;
+    border-top: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+    position: relative;
+    bottom: 0;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #4C2A85;
+    box-shadow: inset 0px 0px 0px 4px #6B7FD7, inset 0px 0px 0px 6px #4C2A85;
+}
+
+.send-btn {
+    padding: 10px 20px;
+    background-color: #6B7FD7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
