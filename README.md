@@ -2,7 +2,7 @@
 
 Next.js es un framework para facilitar el desarrollo fullstack en aplicaciones web
 
-Para asegurarse de poder correrlo correctamente hay que asegurarse de tener Node.js instalado, preferiblemente instalarlo desde su página oficial
+Para asegurarse de poder correr correctamente este proyecto hay que asegurarse de tener Node.js instalado, preferiblemente instalarlo desde su página oficial
 https://nodejs.org/
 Procurar descargar la versión LTS estable más reciente
 
